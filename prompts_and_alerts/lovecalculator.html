@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstPersonName = prompt("What's your name?");
+
+      let secondPersonName = prompt("What's your crush's name?");
+
+      let lovePercentage = Math.random();
+
+      lovePercentage = lovePercentage * 101;
+
+      lovePercentage = Math.floor(lovePercentage);
+
+      if (lovePercentage >= 0 && lovePercentage <= 5) {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. Some connections are like parallel lines, destined never to meet. Embrace the beauty of individual journeys."
+        );
+      } else if (lovePercentage > 5 && lovePercentage <= 15) {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. Sometimes, the heart's journey takes unexpected turns, and a less than 15% love score may be a sign to explore new paths. Let the winds of change guide you to undiscovered horizons."
+        );
+      } else if (lovePercentage > 15 && lovePercentage <= 30) {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. In the dance of hearts, yours may be taking small steps. Patience and understanding can transform a tune into a symphony."
+        );
+      } else if (lovePercentage < 50) {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. Love's compass may waver, but there's potential for growth. Nurture the seeds of affection, and watch a garden of emotions bloom."
+        );
+      } else if (lovePercentage < 75) {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. Love's puzzle is taking shape, yet some pieces remain elusive. Cherish the journey of discovery, for surprises often lead to the most beautiful connections."
+        );
+      } else if (lovePercentage === 100) {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. Congratulations! Your hearts beat as one, creating a symphony of love. Cherish each note and savor the melody of a perfect connection."
+        );
+      } else {
+        alert(
+          firstPersonName +
+            " & " +
+            secondPersonName +
+            ", your love score is " +
+            lovePercentage +
+            "%. Love, like a masterpiece, evolves over time. Embrace the imperfections, for they are the strokes that create a unique and beautiful canvas."
+        );
+      }
+    </script>
+  </body>
+</html>
