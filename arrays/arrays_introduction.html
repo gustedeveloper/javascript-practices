@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let output = []; creating an array
+      // output.push(1); adding an item to the array
+      // output.push(2); ""
+
+      // output.pop; to take out the last item from the array -
+      // output.pop(2); to take out the selected item from the array
+
+      let guestList = ["guste", "ana", "andres", "jorge", "estela", "maria"];
+
+      let guestName = prompt("What's your name?");
+
+      let guestVerification = guestList.includes(guestName.toLowerCase());
+
+      if (guestVerification === true) {
+        alert(
+          guestName.slice(0, 1).toUpperCase() +
+            guestName.slice(1, guestName.length).toLowerCase() +
+            ", welcome!"
+        );
+      } else {
+        alert(
+          "Sorry " +
+            guestName.slice(0, 1).toUpperCase() +
+            guestName.slice(1, guestName.length).toLowerCase() +
+            ", you're not in the list."
+        );
+      }
+    </script>
+  </body>
+</html>
