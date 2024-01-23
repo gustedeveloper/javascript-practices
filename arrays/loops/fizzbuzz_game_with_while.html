@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FizzBuzz Game until 100</title>
+  </head>
+  <body>
+    <script>
+      let output = [];
+
+      let count = 1;
+
+      function fizzBuzz() {
+        while (count <= 100) {
+          //This function will run 100 times, adding 100 values to the output array
+
+          if (count % 3 === 0 && count % 5 === 0) {
+            // if a number is divisible between 3 AND divisible between 5
+            output.push("FizzBuzz"); //instead of the number, it will push FizzBuzz
+          } else if (count % 5 === 0) {
+            // if a number is divisible just between 5
+            output.push("Buzz"); // it will push Buzz
+          } else if (count % 3 === 0) {
+            // if a number is divisible just between 3
+            output.push("Fizz"); // it will push Fizz
+          } else {
+            output.push(count);
+          }
+          count++; // if the number does not comply any of the conditions, it will continue pushing numbers continuing with the sequence
+        }
+        console.log(output);
+      }
+    </script>
+  </body>
+</html>
