@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function beer() {
+        for (let numberOfBottles = 99; numberOfBottles > 0; numberOfBottles--) {
+          if (numberOfBottles === 1) {
+            console.log(
+              numberOfBottles +
+                " bottle of beer on the wall, " +
+                numberOfBottles +
+                " bottle of beer. Take one down and pass it around, no more bottles of beer on the wall."
+            );
+          } else {
+            console.log(
+              numberOfBottles +
+                " bottles of beer on the wall, " +
+                numberOfBottles +
+                " bottles of beer. Take one down and pass it around, " +
+                (numberOfBottles - 1) +
+                " bottles of beer on the wall."
+            );
+          }
+        }
+
+        console.log(
+          "No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall."
+        );
+      }
+    </script>
+  </body>
+</html>
