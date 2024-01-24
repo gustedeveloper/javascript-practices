@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let output = [];
+
+      function fibonacciGenerator(n) {
+        if (n === 1) {
+          output.push(0);
+        } else if (n === 2) {
+          output.push(0, 1);
+        } else if (n === 0) {
+          console.log("Este es el comienzo de la secuencia Fibonacci");
+        } else {
+          output.push(0, 1);
+
+          for (let i = 2; i < n; i++) {
+            let lastItem = output[output.length - 1];
+
+            let penultimateItem = output[output.length - 2];
+
+            let sumOfTwo = penultimateItem + lastItem;
+
+            output.push(sumOfTwo);
+          }
+        }
+
+        return output.slice(0, n);
+      }
+
+      console.log(fibonacciGenerator(3));
+
+      /*Shorter version*/
+
+      function fibonacciGenerator(n) {
+        let output = [0, 1];
+        for (let i = 0; i < n; i++) {
+          output.push(output[i] + output[i + 1]);
+        }
+        return output.slice(0, n);
+      }
+
+      fibonacciGenerator(3);
+    </script>
+  </body>
+</html>
